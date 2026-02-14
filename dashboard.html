@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SheHope</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo">SheHope 🌸</div>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <span id="user-greeting">Hello, <span id="user-name" style="font-weight: bold;">Friend</span>!</span>
+                <span class="badge"
+                    style="background: var(--secondary-color); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;"
+                    id="user-persona">Member</span>
+                <a href="index.html" class="btn btn-secondary" style="padding: 5px 15px; font-size: 0.9rem;">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" class="active" data-target="section-community">🏠 Community</a></li>
+                <li><a href="#" data-target="section-mental-health">🧠 Mental Health</a></li>
+                <li><a href="#" data-target="section-education">📚 Education</a></li>
+                <li><a href="#" data-target="section-career">💼 Job & Career</a></li>
+                <li><a href="#" data-target="section-health">🧘‍♀️ Health Tracking</a></li>
+                <li><a href="#" data-target="section-donation">💝 Donation</a></li>
+                <li><a href="#" data-target="section-safety">🛡️ Safety & Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Community Section -->
+            <section id="section-community" class="dashboard-section">
+                <h2>Community & Groups 🤝</h2>
+                <p>Connect with women who share your interests.</p>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div class="glass-card">
+                        <h3>Wellness Circle</h3>
+                        <p>Daily meditation and check-ins.</p>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Join Group</button>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Tech Sisters</h3>
+                        <p>Discuss coding, design, and tech trends.</p>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Join Group</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mental Health Section -->
+            <section id="section-mental-health" class="dashboard-section" style="display: none;">
+                <h2>Mental Health & Support ❤️</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                    <div class="glass-card">
+                        <h3>Journaling 📓</h3>
+                        <textarea class="form-control" rows="5" placeholder="How are you feeling today?"></textarea>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Save Entry</button>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Mood Tracker 🌈</h3>
+                        <div style="display: flex; gap: 10px; font-size: 2rem; margin-top: 10px; cursor: pointer;">
+                            <span>😊</span><span>😐</span><span>😢</span><span>😡</span><span>😴</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="section-education" class="dashboard-section" style="display: none;">
+                <h2>Education & Awareness 📚</h2>
+                <ul>
+                    <li class="glass-card" style="margin-bottom: 10px;">
+                        <h3>Women's Health 101</h3>
+                        <p>Understanding your body and cycles.</p>
+                    </li>
+                    <li class="glass-card" style="margin-bottom: 10px;">
+                        <h3>Financial Independence</h3>
+                        <p>Basics of saving and investing.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Career Section -->
+            <section id="section-career" class="dashboard-section" style="display: none;">
+                <h2>Job & Career Support 💼</h2>
+                <div class="glass-card">
+                    <h3>Job Board</h3>
+                    <p>Coming soon: Curated opportunities for you.</p>
+                </div>
+            </section>
+
+            <!-- Health Section -->
+            <section id="section-health" class="dashboard-section" style="display: none;">
+                <h2>Health Tracking 🧘‍♀️</h2>
+                <div class="glass-card">
+                    <h3>Period Tracker</h3>
+                    <p>Next cycle estimated in: <strong>12 Days</strong></p>
+                </div>
+            </section>
+
+            <!-- Donation Section -->
+            <section id="section-donation" class="dashboard-section" style="display: none;">
+                <h2>Support Your Sisters 💝</h2>
+                <div class="glass-card text-center">
+                    <h3>Make a Donation</h3>
+                    <p>Your contribution helps provide free counseling for women in need.</p>
+                    <button class="btn btn-primary" style="margin-top: 15px;">Donate Securely</button>
+                </div>
+            </section>
+
+            <!-- Safety Section -->
+            <section id="section-safety" class="dashboard-section" style="display: none;">
+                <h2>Safety & Support 🛡️</h2>
+                <div class="glass-card" style="border-color: #ffcccc;">
+                    <h3 style="color: #d63031;">Emergency Resources</h3>
+                    <p>If you are in immediate danger, please call your local emergency number.</p>
+                    <button class="btn btn-secondary"
+                        style="border-color: #d63031; color: #d63031; margin-top: 10px;">Report an Incident</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Emergency Exit Button -->
+    <a href="https://google.com" id="emergency-exit" class="emergency-exit">
+        EXIT 🚪
+    </a>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

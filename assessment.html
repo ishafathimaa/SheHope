@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Assessment - SheHope</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="padding: 40px 20px;">
+        <div class="glass-card fade-in" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="text-center" style="color: var(--accent-color); margin-bottom: 30px;">Let's get to know you 🧠
+            </h2>
+            <form id="assessment-form">
+
+                <!-- Q1 -->
+                <div class="form-group">
+                    <label>1. What are you primarily looking for?</label>
+                    <select name="goal" class="form-control" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="job_support">Job & Career Support 💼</option>
+                        <option value="emotional_support">Emotional Support & Healing ❤️</option>
+                        <option value="learning">Learning & Education 📚</option>
+                        <option value="health_support">Health Support & Tracking 🧘‍♀️</option>
+                        <option value="community">Community Connection 🤝</option>
+                    </select>
+                </div>
+
+                <!-- Q2 (Multi-select simulated with checkboxes) -->
+                <div class="form-group">
+                    <label>2. Your Interests (Select all that apply)</label>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests" value="tech">
+                            Technology 💻</label>
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests" value="research">
+                            Study & Research 🔬</label>
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests" value="art"> Art &
+                            Creativity 🎨</label>
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests" value="business">
+                            Business 📈</label>
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests" value="fitness">
+                            Health & Fitness 🏃‍♀️</label>
+                        <label style="font-weight: normal;"><input type="checkbox" name="interests"
+                                value="social_impact"> Social Impact 🌍</label>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="form-group">
+                    <label>3. How would you describe your personality?</label>
+                    <select name="personality" class="form-control" required>
+                        <option value="introvert">Introvert 🐢</option>
+                        <option value="extrovert">Extrovert 🦁</option>
+                        <option value="ambivert">Ambivert 🦄</option>
+                    </select>
+                </div>
+
+                <!-- Q4 -->
+                <div class="form-group">
+                    <label>4. Preferred support style?</label>
+                    <select name="support_style" class="form-control" required>
+                        <option value="1on1">1-on-1 Chat 💬</option>
+                        <option value="small_group">Small Private Group 👭</option>
+                        <option value="open_group">Open Group Discussion 🗣️</option>
+                    </select>
+                </div>
+
+                <div class="text-center" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-primary">Complete Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
